@@ -3,17 +3,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body, #root {
-  /* background-color: transparent; */
-  /* color: #EEE5FF; */
-  
-/* } */
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap'); */
+
+body, #root {
+  background-color: transparent;
+  color: #EEE5FF;
+  font-family: 'Outfit', sans-serif;
+}
 
 /* Button hover effect */
 button:hover {
   background-color: transparent;
   color: white;
   border-color: white;
+
 }
 
 /* Header Styles */
@@ -33,6 +36,7 @@ button:hover {
 .hmargin {
   margin-top: 190px;
   text-align: center;
+  margin-left: 331px;
 }
 
 .headerc {
@@ -60,7 +64,7 @@ button:hover {
 
 .headerp {
   align-items: center;
-  width: 100%;
+  width: 82%;
   font-size: 20px;
   line-height: 24px;
   margin-top: 30px;
@@ -74,11 +78,14 @@ button:hover {
   justify-content: center;
   margin-top: 50px;
   gap: 240px;
+  margin-left: -359px;
+ 
 }
 
 .imgL span {
   display: flex;
   align-items: center;
+ 
 }
 
 .imgL img {
@@ -88,10 +95,12 @@ button:hover {
 
 .Heroc {
   margin-top: 70px;
+  margin-left: 331px;
 }
 
 .heroh {
   font-size: 22px;
+  margin-right: 250px;
 }
 
 .heromw {
@@ -138,7 +147,7 @@ button:hover {
   font-weight: 500;
   line-height: 60px;
   color: #EEE5FF;
-  width: 50%;
+  width: 33%;
   text-align: center;
   display: block;
   margin: 0 auto;
@@ -149,6 +158,8 @@ button:hover {
   display: flex;
   gap: 30px;
   align-items: center;
+  width: 60%;
+  margin-left: 305px;
 }
 
 .cards {
@@ -197,6 +208,8 @@ button:hover {
   text-align: center;
   border-radius: 20px;
   border: 2px solid #FFFFFF10;
+  width: 60%;
+    margin-left: 300px;
 }
 
 .box h2 {
@@ -237,6 +250,9 @@ button:hover {
   font-size: 40px;
   font-weight: 500;
   line-height: 60px;
+  width: 50%;
+  /* display: block; */
+  margin-left: 200px;
 }
 
 .section p {
@@ -244,6 +260,8 @@ button:hover {
   font-weight: 300;
   line-height: 30px;
   margin: 30px;
+  width: 50%;
+    margin-left: 202px;
 }
 
 .fcard {
@@ -253,6 +271,8 @@ button:hover {
   gap: 55px;
   margin-top: 30px;
   padding: 0 20px;
+  width: 65%;
+    margin-left: 265px;
 }
 
 .card {
@@ -382,14 +402,24 @@ button:hover {
 }
 
 .background-cavas{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
+  aspect-ratio: 16/9;
+  position: fixed;
+  /* height: 100%; */
+  width: 100lvw;
+  z-index: 0;
   inset: 0px;
+  height: 100vh;
+  /* border-radius: 10px solid pink; */
 }
 .app {
-  position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  height: 100vh;
+  width: 100;
+  bottom: 0;
+  margin-left: 55px;
   /* min-height: 100vh; */
 }
 /* Other component styles */
